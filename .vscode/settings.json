@@ -1,0 +1,16 @@
+{
+    "sqltools.connections": [
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": true
+                }
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "driver": "PostgreSQL",
+            "connectString": "postgresql://DBOpgave_owner:npg_YwTaXCpNv30Q@ep-late-cell-a85wyuei-pooler.eastus2.azure.neon.tech/DBOpgave?sslmode=require",
+            "name": "DB"
+        }
+    ]
+}

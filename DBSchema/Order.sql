@@ -5,4 +5,3 @@ CREATE TABLE `order` (
     shipping ENUM('Postnord', 'GLS', 'Pickup'),     
     product_id INT
 );
-
