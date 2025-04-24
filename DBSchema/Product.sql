@@ -1,6 +1,6 @@
 CREATE TABLE product (
  id INT PRIMARY KEY,
-  alcohol_id INT  NOT NULL,
+
   product_type TEXT NOT NULL,
   product_name TEXT  NOT NULL,
   percent DECIMAL(2,2),
