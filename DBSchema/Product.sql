@@ -1,11 +1,15 @@
 CREATE TABLE product (
- id INT PRIMARY KEY,
-  alcohol_id INT  NOT NULL,
-  product_type TEXT NOT NULL,
-  product_name TEXT  NOT NULL,
-  percent DECIMAL(2,2),
+  id INTEGER PRIMARY KEY,
+  product_type TEXT,
+  product_name TEXT,
+  percent NUMERIC,
   nationality TEXT,
-  age INT,
-  price DECIMAL(5,2),
-  customer_id INT NOT NULL
+  age INTEGER,
+  price NUMERIC,
+
+  customer_id INTEGER,
+  FOREIGN KEY (customer_id) REFERENCES               customer(id),
+  FOREIGN KEY (alcohol_id) REFERENCES                alcohol(id),
+  FOREIGN KEY (product_type) REFERENCES
+  alcohol (alcotype)
 );
