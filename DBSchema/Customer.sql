@@ -6,4 +6,5 @@ CREATE TABLE customer (
     address TEXT,
     phone INTEGER,
     isSeller BOOLEAN
+    passwordHash TEXT NOT NULL DEFAULT ''
 );
